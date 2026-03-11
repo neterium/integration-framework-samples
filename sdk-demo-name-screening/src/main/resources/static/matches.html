@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/matches.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h1>Matches</h1>
+
+<div class="spaced">
+    <label for="filter">Show:&nbsp;</label>
+    <select id="filter" onchange="fetchMatches()" style="width: 250px">
+        <option value="">All matches</option>
+        <option selected value="NONE">Unresolved matches</option>
+        <option value="IGNORE">Disproved matches</option>
+        <option value="KEEP">Confirmed matches</option>
+    </select>
+</div>
+<div style="overflow: auto; height: 300px; width: 100%;">
+    <table style="width: 100%;">
+        <thead>
+        <tr>
+            <th>ScreenedText</th>
+            <th>MatchedText</th>
+            <th>Score</th>
+            <th>Level</th>
+            <th>ProfileID</th>
+            <th>LastModified</th>
+            <th>Decision</th>
+            <th hidden="hidden">counterpartId</th>
+            <th hidden="hidden">profile</th>
+            <th hidden="hidden">id</th>
+        </tr>
+        </thead>
+        <tbody id="matchesTable">
+        <!-- Rows will be populated by JS -->
+        </tbody>
+    </table>
+</div>
+
+<div style="display: flex; padding-top: 12px">
+    <div style="width: 50%">
+        <h3 id="counterpartName">Counterpart</h3>
+        <table style="width: 100%;">
+            <tbody id="counterpartTable">
+            <tr>
+                <td>Type:</td>
+                <td><span id="type"></span></td>
+            </tr>
+            <tr>
+                <td>LastName:</td>
+                <td><span id="lastName"></span></td>
+            </tr>
+            <tr>
+                <td>FirstName:</td>
+                <td><span id="firstName"></span></td>
+            </tr>
+            <tr>
+                <td>MiddleNames:</td>
+                <td><span id="middleNames"></span></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><span id="gender"></span></td>
+            </tr>
+            <tr>
+                <td>DateOfBirth:</td>
+                <td><span id="dateOfBirth"></span></td>
+            </tr>
+            <tr>
+                <td>Registration CountryCode:</td>
+                <td><span id="registrationCountryCode"></span></td>
+            </tr>
+            <tr>
+                <td>Registration Number:</td>
+                <td><span id="registrationNumber"></span></td>
+            <tr>
+            <tr>
+                <td>Address CountryCode:</td>
+                <td><span id="addressCountryCode"></span></td>
+            </tr>
+            <tr>
+                <td>Address CityName:</td>
+                <td><span id="addressCityName"></span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="width: 50%; padding-left: 20px;">
+        <h3>Matched Profile
+            <span style="padding-left: 24px">
+                <button onclick="updateDecision('KEEP')" style="background-color: red; color: white"
+                        title="Confirm match (turn to alert)">Accept</button>
+                <button onclick="updateDecision('IGNORE')" style="background-color: green; color: white"
+                        title="Ignore match (false positive)">Reject</button>
+                <button onclick="alert('Sent to level 2 for investigation')"
+                        style="background-color: blue; color: white"
+                        title="Escalate to some dedicated tool for further investigation">Escalate</button>
+                <button onclick="updateDecision('NONE')" title="Remove decision">Reset</button>
+            </span>
+        </h3>
+        <div style="background-color: lightyellow; border: 1px solid gray; height: 99%">
+            <span id="profileDetails" style="width: 100%; height: 99%">
+        </span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let currentRow;
+    // Initial load
+    window.onload = () => fetchMatches();
+    // Handle click on row
+    document.addEventListener("DOMContentLoaded", function () {
+        const table = document.getElementById("matchesTable");
+        table.addEventListener("click", function (event) {
+            const row = event.target.closest("tr");
+            if (!row || row.parentNode.tagName === "THEAD") return; // ignore header
+            if (currentRow) {
+                currentRow.classList.remove("clicked");
+            }
+            currentRow = row;
+            currentRow.classList.add("clicked");
+            const counterpartId = currentRow.cells[7].textContent.trim();
+            loadCounterpart(counterpartId);
+            const json = currentRow.cells[8].textContent.trim();
+            renderProfile(json);
+        });
+    });
+</script>
+
+</body>
+</html>

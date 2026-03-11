@@ -1,0 +1,1343 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0000</MsgId>
+            <CreDtTm>2025-03-14T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0000</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">60834.04</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-06-04</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>47</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>68665</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>BE30 0012 1637 1411</IBAN>
+                </Id>
+            </DbtrAcct>
+            <Cdtr>
+                <Nm>Sarah Smith</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>44</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>32855</PstCd>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>DE92 7015 0000 0498</IBAN>
+                </Id>
+            </CdtrAcct>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0001</MsgId>
+            <CreDtTm>2025-06-14T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0001</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">59803.25</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-05-12</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Miller Trading</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>66</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>64807</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>LU03 2692 2764 5193 6336</IBAN>
+                </Id>
+            </DbtrAcct>
+            <Cdtr>
+                <Nm>ROSNEFT TRADING S.A.</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>138</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>69147</PstCd>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>IE12 NMJP 0191 1615 1492 62</IBAN>
+                </Id>
+            </CdtrAcct>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0002</MsgId>
+            <CreDtTm>2025-05-04T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0002</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">93915.55</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-24</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Wilson Logistics</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>85</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>61116</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>29</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>27649</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0003</MsgId>
+            <CreDtTm>2025-06-15T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0003</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">34067.85</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-01-04</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>16</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>79549</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Johnson Industries</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>50</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>58176</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0004</MsgId>
+            <CreDtTm>2025-05-31T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0004</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">53449.15</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-02-14</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Taylor Holdings</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>56</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>28532</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>ISLAMIC REVOLUTIONARY GUARD CORPS</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>115</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>30875</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0005</MsgId>
+            <CreDtTm>2025-12-20T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0005</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">34848.23</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-01-24</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>ISLAMIC REVOLUTIONARY GUARD CORPS</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>188</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>66561</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>David Martin</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>125</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>96371</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0006</MsgId>
+            <CreDtTm>2025-05-03T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0006</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">25994.18</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-10-02</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Brown Group</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>188</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>89391</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>GENNADY TIMCHENKO</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>102</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>79947</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0007</MsgId>
+            <CreDtTm>2025-07-02T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0007</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">29880.51</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-06-21</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>ISLAMIC REVOLUTIONARY GUARD CORPS</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>146</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>82726</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Sarah Johnson</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>84</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>20832</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0008</MsgId>
+            <CreDtTm>2025-02-13T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0008</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">58727.00</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-06-21</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Martin Industries</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>5</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>92414</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>139</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>86499</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0009</MsgId>
+            <CreDtTm>2025-03-13T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0009</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">23628.91</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-06</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>ISLAMIC REVOLUTIONARY GUARD CORPS</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>171</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>97249</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Anna Thomas</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>93</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>51176</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0010</MsgId>
+            <CreDtTm>2025-04-21T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0010</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">49281.28</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-03-28</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>137</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>32029</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Maria Wilson</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>197</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>32213</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0011</MsgId>
+            <CreDtTm>2025-01-13T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0011</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">73547.27</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-12</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>ROSNEFT TRADING S.A.</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>118</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>17452</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>John Johnson</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>139</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>74671</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0012</MsgId>
+            <CreDtTm>2025-12-14T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0012</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">3936.90</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-08-26</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Miller Services</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>136</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>83475</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>VICTOR BOUT</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>135</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>20919</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0013</MsgId>
+            <CreDtTm>2025-07-17T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0013</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">27319.86</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-11-09</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>171</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>83940</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Maria Moore</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>38</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>24190</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0014</MsgId>
+            <CreDtTm>2025-02-03T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0014</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">49358.05</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-12-01</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>120</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>86015</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Daniel Miller</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>170</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>78602</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0015</MsgId>
+            <CreDtTm>2025-09-20T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0015</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">53699.50</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-02-26</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>34</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>78753</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Smith Industries</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>102</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>93534</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0016</MsgId>
+            <CreDtTm>2025-07-07T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0016</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">46405.72</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-02</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>David Moore</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>172</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>50909</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>GENNADY TIMCHENKO</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>31</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>72202</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0017</MsgId>
+            <CreDtTm>2025-08-20T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0017</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">92485.91</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-07</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Anderson Group</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>31</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>79648</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>HIZBALLAH</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>111</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>45279</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0018</MsgId>
+            <CreDtTm>2025-09-18T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0018</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">10175.19</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-10-26</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>GENNADY TIMCHENKO</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>198</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>52960</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Wilson Logistics</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>129</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>72270</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0019</MsgId>
+            <CreDtTm>2025-01-11T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0019</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">28791.65</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-02-13</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>178</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>77656</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Maria Brown</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>147</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>67009</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0020</MsgId>
+            <CreDtTm>2025-04-10T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0020</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">43419.55</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-12-27</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Maria Miller</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>151</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>92029</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>ISLAMIC REVOLUTIONARY GUARD CORPS</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>153</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>43881</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0021</MsgId>
+            <CreDtTm>2025-06-18T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0021</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">77423.61</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-06-07</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Peter Smith</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>73</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>20009</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>IRANIAN OIL COMPANY</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>172</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>87421</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0022</MsgId>
+            <CreDtTm>2025-06-25T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0022</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">76715.12</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-02-24</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>82</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>81935</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Peter Wilson</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>38</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>13446</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0023</MsgId>
+            <CreDtTm>2025-05-22T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0023</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">12885.68</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-11-09</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>153</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>80390</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Smith Holdings</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>160</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>85698</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0024</MsgId>
+            <CreDtTm>2025-10-31T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0024</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">63705.71</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-03-15</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Wilson Industries</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>61</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>53576</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>IRANIAN OIL COMPANY</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>51</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>80724</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0025</MsgId>
+            <CreDtTm>2025-05-01T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0025</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">34096.86</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-04-20</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Johnson Group</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>126</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>99098</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>GENNADY TIMCHENKO</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>91</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>28915</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0026</MsgId>
+            <CreDtTm>2025-02-01T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0026</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">40473.81</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-04-24</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Anderson Trading</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>6</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>24445</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>4</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>20635</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0027</MsgId>
+            <CreDtTm>2025-11-08T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0027</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">94467.91</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-08-02</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>191</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>31966</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Michael Moore</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>21</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>11100</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0028</MsgId>
+            <CreDtTm>2025-03-09T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0028</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">61096.56</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-09-20</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Michael Thomas</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>143</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>59027</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>BANCO DELTA ASIA</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>79</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>70912</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0029</MsgId>
+            <CreDtTm>2025-05-12T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0029</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">53270.67</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-06-09</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>94</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>82584</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Anna Brown</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>115</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>55397</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0030</MsgId>
+            <CreDtTm>2025-01-20T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0030</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">40562.57</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-10-07</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Daniel Martin</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>11</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>63337</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>GENNADY TIMCHENKO</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>65</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>97696</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0031</MsgId>
+            <CreDtTm>2025-08-05T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0031</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">89648.92</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-28</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Daniel Smith</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>28</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>24777</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>ROSNEFT TRADING S.A.</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>21</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>95070</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0032</MsgId>
+            <CreDtTm>2025-11-24T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0032</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">38572.38</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-11-11</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>HIZBALLAH</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>169</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>69071</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Johnson Industries</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>91</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>23185</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0033</MsgId>
+            <CreDtTm>2025-04-15T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0033</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">97734.63</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-04-11</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Martin Group</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>72</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>93439</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>77</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>82850</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0034</MsgId>
+            <CreDtTm>2025-10-24T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0034</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">33210.46</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-11-21</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Robert Anderson</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>125</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>96962</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>AEROFLOT RUSSIAN AIRLINES</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>29</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>96931</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0035</MsgId>
+            <CreDtTm>2025-06-17T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0035</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">57652.42</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-15</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>NORTH KOREA MINING DEVELOPMENT TRADING CORPORATION</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>183</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>NL</Ctry>
+                    <PstCd>33348</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Taylor Trading</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>157</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>80884</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0036</MsgId>
+            <CreDtTm>2025-12-22T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0036</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">23189.60</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-12-31</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>MAHAN AIR</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>29</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>81395</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Peter Thomas</Nm>
+                <PstlAdr>
+                    <StrtNm>King Street</StrtNm>
+                    <BldgNb>155</BldgNb>
+                    <TwnNm>Frankfurt</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>54455</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0037</MsgId>
+            <CreDtTm>2025-08-25T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0037</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">52874.63</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-10-23</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Miller Holdings</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>120</BldgNb>
+                    <TwnNm>Brussels</TwnNm>
+                    <Ctry>GB</Ctry>
+                    <PstCd>17247</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>VICTOR BOUT</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>80</BldgNb>
+                    <TwnNm>Zurich</TwnNm>
+                    <Ctry>BE</Ctry>
+                    <PstCd>96287</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0038</MsgId>
+            <CreDtTm>2025-11-23T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0038</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">6719.43</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-03-18</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>Peter Thomas</Nm>
+                <PstlAdr>
+                    <StrtNm>Maple Road</StrtNm>
+                    <BldgNb>86</BldgNb>
+                    <TwnNm>Amsterdam</TwnNm>
+                    <Ctry>CH</Ctry>
+                    <PstCd>74462</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>IRANIAN OIL COMPANY</Nm>
+                <PstlAdr>
+                    <StrtNm>Church Lane</StrtNm>
+                    <BldgNb>115</BldgNb>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>DE</Ctry>
+                    <PstCd>27864</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>MSG0039</MsgId>
+            <CreDtTm>2025-09-05T00:00:00</CreDtTm>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>E2E0039</EndToEndId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">66272.59</IntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-10-23</IntrBkSttlmDt>
+            <Dbtr>
+                <Nm>ROSNEFT TRADING S.A.</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>183</BldgNb>
+                    <TwnNm>Paris</TwnNm>
+                    <Ctry>FR</Ctry>
+                    <PstCd>65488</PstCd>
+                </PstlAdr>
+            </Dbtr>
+            <Cdtr>
+                <Nm>Peter Miller</Nm>
+                <PstlAdr>
+                    <StrtNm>High Street</StrtNm>
+                    <BldgNb>67</BldgNb>
+                    <TwnNm>Madrid</TwnNm>
+                    <Ctry>ES</Ctry>
+                    <PstCd>56555</PstCd>
+                </PstlAdr>
+            </Cdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Screen DB</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/forms.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Screen Database</h1>
+
+<div class="spaced">
+    <small>Re-screen the <b>whole</b> database (resulting from successive imports).</small>
+</div>
+
+<div class="spaced">
+    <form action="./rest/screen/database" method="get">
+
+        <div class="spaced">
+            <label for="collection">Collection:</label>
+            &nbsp;
+            <select id="collection" name="collection" style="width: 150px">
+                <option selected="selected">sanctions</option>
+                <option>dowjones</option>
+            </select>
+        </div>
+
+        <div class="spaced">
+            <label for="threshold">Threshold:</label>
+            &nbsp;
+            <input id="threshold" name="threshold" type="text" value="60"/>
+            &nbsp;
+            <small>From 50 to 100</small>
+        </div>
+
+        <div class="spaced">
+            <input class="button" type="submit" value="Run"/>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.querySelector('form')
+        .addEventListener('submit', async function (event) {
+            event.preventDefault();
+            await submitFormUsingGet(event.target, './job-results.html');
+        });
+</script>
+
+</body>
+</html>

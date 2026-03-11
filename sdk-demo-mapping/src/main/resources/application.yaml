@@ -1,0 +1,10 @@
+logging:
+  level:
+    org.springframework: INFO
+    com.neterium.client.demo: DEBUG
+    com.neterium.client.sdk: WARN
+    com.neterium.client.sdk.converters: TRACE
+
+spring:
+  main:
+    lazy-initialization: true

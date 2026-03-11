@@ -1,0 +1,232 @@
+/* --- Common --- */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6f9;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+label {
+    color: navy;
+}
+
+.spaced {
+    padding: 8px;
+}
+
+.menu-item {
+    padding: 4px;
+}
+
+button, .button {
+    width: 150px;
+    padding-right: 12px;
+}
+
+.arrow-button {
+    width: 40px;
+}
+
+
+/* --- Dashboard --- */
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.section-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.metrics {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.metric-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: 375px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.metric-name {
+    font-size: 1rem;
+    color: #666;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+}
+
+.green-value {
+    color: darkgreen;
+}
+
+.orange-value {
+    color: orange;
+}
+
+.red-value {
+    color: red;
+}
+
+.metric-unit {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.gauge-wrapper {
+    margin-top: 1rem;
+}
+
+.gauge {
+    position: relative;
+    height: 20px;
+    background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.needle {
+    position: absolute;
+    top: -5px;
+    width: 5px;
+    height: 30px;
+    background: black;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 12px;
+}
+
+.threshold-needle {
+    position: absolute;
+    top: -5px;
+    width: 2px;
+    height: 30px;
+    border-left: 2px solid dimgrey;
+    background: none;
+    transform: translateX(-50%);
+    border-radius: 12px;
+}
+
+.gauge-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #555;
+    padding: 0 4px;
+}
+
+/* --- Table --- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tbody tr:hover:not(.clicked)  {
+    background-color: lightcyan;
+}
+
+tbody tr.clicked {
+    background-color: lightsteelblue;
+}
+
+/* --- Job results --- */
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: small;
+    display: inline-block;
+}
+
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-starting {
+    background-color: lightgrey;
+    color: dimgray;
+}
+
+.status-started {
+    background-color: skyblue;
+    color: navy;
+}
+
+.status-failed {
+    background-color: mistyrose;
+    color: darkred;
+}
+
+.badge-container {
+    position: relative;
+    margin-left: 10px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    //font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: rgba(123, 104, 238, 0.1);
+    border: 1px solid rgba(123, 104, 238, 0.3);
+}
+
+/* --- Misc --- */
+
+.number {
+    text-align: right;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}

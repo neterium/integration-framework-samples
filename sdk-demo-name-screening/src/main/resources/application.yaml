@@ -1,0 +1,112 @@
+logging:
+  level:
+    org.springframework: INFO
+    com.neterium: INFO
+
+server:
+  port: 9003
+
+
+# --- SpringBoot ---
+
+spring:
+
+  config:
+    import: "file:.env[.properties]"
+
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: ADMIN
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+
+  datasource:
+    name: BatchDataSource
+    url: jdbc:h2:mem:spring-batch-db
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+    hikari:
+      maximum-pool-size: 30
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: sdk-demo
+
+
+# --- Neterium ---
+
+neterium:
+
+  http-client:
+    connect-timeout: 30s
+    read-timeout: 70s
+    pool-size: 100
+
+  api-server:
+    base-url: https://dev.neterium.cloud/api/v1
+    key-id: demo
+
+  api-keys:
+    demo:
+      username: "${SDK_USER}"
+      password: "${SDK_PWD}"
+
+  oauth2:
+    well-known-uri: https://kc.dev.k8s.neterium.cloud/auth/realms/portal/.well-known/openid-configuration
+    client-id: api
+
+  tokens:
+    prefetch: false
+    eager: true
+    expiration-offset-sec: 10
+
+  partitioning:
+    width: 3
+
+  throttling:
+    window:
+      size: 30s
+    metric:
+      name: MEAN
+      min-count: 5
+    durations:
+      threshold-value: 3s
+      threshold-ratio: 0.9
+    timeouts:
+      max-occurrences: 5
+    calibration:
+      initial-value: 3
+      max-value: 12
+      variation-amount: 0.10
+
+  screening:
+    validate: false
+
+
+# --- Demo app ---
+
+demo:
+
+  polling:
+    directory: ./polling
+    interval: 30s
+
+  jobs:
+    grid-size: 100
+    min-partition-size: 50
+    page-size: 100
+    chunk-size: 50
+
+  screening:
+    threshold: 60
+    collection: sanctions
+    batch-size: 200

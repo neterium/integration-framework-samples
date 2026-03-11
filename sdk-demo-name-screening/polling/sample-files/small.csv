@@ -1,0 +1,6 @@
+RecordId,Type,LastName,FirstName,MiddleNames,Gender,DateOfBirth,RegistrationCountry,RegistrationNumber,AddressCountry,AddressCity
+388cbcf4f-e696-4190-b8be-8fac76562831,INDIVIDUAL,Brown,Alex,,MALE,1973,BE,,,
+298b50f2-e9b9-4929-828a-1e8822faa665,INDIVIDUAL,Davis,John,,MALE,,FR,,,
+7c2a42c7-ab16-44b5-b165-7dd8394b03d3,INDIVIDUAL,Martinez,Emily,,FEMALE,1983,EN,,,London
+029b694a-2b02-41c9-bfac-b7c7199f6d7f,INDIVIDUAL,Putin,Vladimir,,MALE,1956,RU,,RU,
+9d38544c-210f-44e2-8f80-73ede98944fa,INDIVIDUAL,Smith,John,,MALE,1962,US,,,

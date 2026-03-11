@@ -1,0 +1,9 @@
+{
+  "threshold": 90,
+  "matching": "fuzzy",
+  "cityProximity": 50,
+  "charset": "latin",
+  "riskCountries": [
+    "RU"
+  ]
+}

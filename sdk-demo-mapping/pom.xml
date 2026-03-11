@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.neterium.client</groupId>
+        <artifactId>neterium-sdk-samples</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.neterium.client.samples</groupId>
+    <artifactId>sdk-demo-mapping</artifactId>
+
+    <name>Neterium Client SDK :: Demo :: Mapping App</name>
+
+    <dependencies>
+
+        <!-- Neterium SDK -->
+        <dependency>
+            <groupId>com.neterium.client</groupId>
+            <artifactId>neterium-sdk-spring-boot-starter</artifactId>
+            <version>${neterium-sdk.version}</version>
+        </dependency>
+
+        <!-- Third-party libs -->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.prowidesoftware</groupId>
+            <artifactId>pw-swift-core</artifactId>
+            <version>SRU2025-10.3.7</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

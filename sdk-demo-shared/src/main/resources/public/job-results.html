@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Job Results</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/job-results.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="right">
+    <label for="refreshRate">AutoRefresh:</label>
+    &nbsp;
+    <select id="refreshRate">
+        <option value="-1">Off</option>
+        <option value="1000">1 sec</option>
+        <option selected="selected" value="1500">1,5 sec</option>
+        <option value="2000">2 sec</option>
+        <option value="5000">5 sec</option>
+    </select>
+</div>
+
+<h1>Job Results</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Duration</th>
+        <th>Status</th>
+        <th class="number">Read</th>
+        <th class="number">Write</th>
+        <th class="number">Skipped</th>
+    </tr>
+    </thead>
+    <tbody id="stepTable">
+    <!-- Rows will be populated by JS -->
+    </tbody>
+</table>
+
+<script>
+    // Initial load
+    window.onload = () => fetchData();
+    // Set auto-refresh
+    let timerId = setInterval(fetchData, 1_500);
+    // Listen for changes
+    document.getElementById("refreshRate")
+        .addEventListener("change", function () {
+            if (timerId !== null) {
+                clearInterval(timerId);
+            }
+            const newInterval = parseInt(this.value);
+            if (newInterval > 0) {
+                timerId = setInterval(fetchData, newInterval);
+            }
+        });
+</script>
+
+</body>
+</html>

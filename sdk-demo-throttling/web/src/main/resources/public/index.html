@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Neterium SDK</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/toolbox.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Neterium SDK Throttling Demo</h1>
+
+<div>
+
+    <h3>Application Endpoints <span style="font-size: small">(cfr ScreeningController)</span></h3>
+
+    <div class="menu-item">
+        <button onclick="window.open('./screening-params.html', '_blank')">Screening</button>
+        Screen a large volume of random (fake) <span id="what" style="font-weight: bold">?</span>
+    </div>
+
+
+    <h3>Monitoring</h3>
+
+    <div class="menu-item">
+        <button onclick="window.open('./dashboard.html', '_blank')">Dashboard</button>
+        Real-time monitoring of screening process
+    </div>
+
+    <div class="menu-item">
+        <button onclick="window.open('./job-results.html', '_blank')">Job Results</button>
+        Detailed execution results of last job
+    </div>
+
+</div>
+
+<script>
+    window.onload = () => fetchLabelInto(document.getElementById("what"));
+</script>
+
+</body>
+</html>

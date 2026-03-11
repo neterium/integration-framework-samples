@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Screening Params</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/forms.js" type="text/javascript"></script>
+    <script src="js/toolbox.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Screening Params</h1>
+
+<div class="spaced">
+    <small>Screen a large number of random/fake <span id="what" style="font-weight: bold">?</span>
+        (whose X% are likely to generate a match)</small>
+</div>
+
+<div class="spaced">
+    <form action="./screen/start" method="get">
+
+        <div class="spaced">
+            <label for="nbRecords">Nbr of records:</label>
+            &nbsp;
+            <input id="nbRecords" name="nbRecords" type="text" value="1500"/>
+        </div>
+
+        <div class="spaced">
+            <label for="hitRatio">Hit Ratio:</label>
+            &nbsp;
+            <input id="hitRatio" name="hitRatio" type="text" value="0.2"/>
+            &nbsp;
+            <small>Between 0 and 1</small>
+        </div>
+
+        <div class="spaced">
+            <label for="collection">Collection:</label>
+            &nbsp;
+            <select id="collection" name="collection" style="width: 150px">
+                <option selected="selected">sanctions</option>
+                <option>dowjones</option>
+            </select>
+        </div>
+
+        <div class="spaced">
+            <label for="threshold">Threshold:</label>
+            &nbsp;
+            <input id="threshold" name="threshold" type="text" value="85"/>
+            &nbsp;
+            <small>From 50 to 100</small>
+        </div>
+
+        <div class="spaced">
+            <label for="batchSize">Batch size:</label>
+            &nbsp;
+            <select id="batchSize" name="batchSize" style="width: 150px">
+                <option value="1">1</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option selected="selected" value="100">100</option>
+                <option value="200">200</option>
+            </select>
+        </div>
+
+        <div class="spaced">
+            <input class="button" type="submit" value="Run"/>
+        </div>
+    </form>
+</div>
+
+<script>
+    window.onload = () => fetchLabelInto(document.getElementById("what"));
+    document.querySelector('form')
+        .addEventListener('submit', async function (event) {
+            event.preventDefault();
+            await submitFormUsingGet(event.target, './job-results.html');
+        });
+</script>
+
+</body>
+</html>

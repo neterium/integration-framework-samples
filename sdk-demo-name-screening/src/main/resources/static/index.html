@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Neterium SDK</title>
+    <link href="css/neterium.css" rel="stylesheet">
+</head>
+<body>
+<h1>Neterium SDK Demo (JetScan™)</h1>
+
+<div>
+
+    <h3>Application Endpoints <span style="font-size: small">(cfr ScreeningController)</span></h3>
+
+    <div class="menu-item">
+        <button onclick="window.open('./import-file.html', '_blank')">Import</button>
+        Import & Screen a CSV file
+    </div>
+
+    <div class="menu-item">
+        <button onclick="window.open('./screen-db.html', '_blank')">Screen DB</button>
+        (Re-)Screen the whole counterpart database
+    </div>
+
+
+    <h3>Database</h3>
+
+    <div class="menu-item">
+        <button onclick="window.open('./counterparts.html', '_blank')">Counterparts</button>
+        Browse content of 'Counterpart' table (with related alerts)
+    </div>
+
+    <div class="menu-item">
+        <button onclick="window.open('./matches.html', '_blank')">Matches</button>
+        Verify matches in order to identify "false-positive" items
+    </div>
+
+
+    <h3>Monitoring</h3>
+
+    <div class="menu-item">
+        <button onclick="window.open('./job-results.html', '_blank')">Job Results</button>
+        Detailed execution results of last job
+    </div>
+
+</div>
+</body>
+</html>

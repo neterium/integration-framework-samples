@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.neterium.client</groupId>
+        <artifactId>neterium-sdk-samples</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.neterium.client.samples</groupId>
+    <artifactId>sdk-demo-shared</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Neterium Client SDK :: Demo :: Shared Module</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.neterium.client</groupId>
+            <artifactId>neterium-sdk-spring-boot</artifactId>
+            <version>${neterium-sdk.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

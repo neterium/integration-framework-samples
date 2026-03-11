@@ -1,0 +1,52 @@
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.batch: INFO
+    com.neterium.client: INFO
+    com.neterium.client.sdk.throttling: TRACE
+    com.neterium.client.sdk.instrumentation.TimingInterceptor: TRACE
+
+
+# --- SpringBoot ---
+
+spring:
+
+  profiles:
+    default: jetscan
+
+  config:
+    import: "file:.env[.properties]"
+
+
+# --- Neterium ---
+
+neterium:
+
+  oauth2:
+    well-known-uri: https://connect-to.neterium.cloud/auth/realms/dev/.well-known/openid-configuration
+    client-id: api
+
+  api-server:
+    base-url: https://dev.neterium.cloud/api/v1
+    key-id: demo
+
+  api-keys:
+    demo:
+      username: "${SDK_USER}"
+      password: "${SDK_PWD}"
+
+  throttling:
+    window:
+      size: 60s
+    metric:
+      name: MEAN
+      min-count: 15
+    durations:
+      threshold-value: 2s
+      threshold-ratio: 0.9
+    timeouts:
+      max-occurrences: 5
+    calibration:
+      initial-value: 3
+      max-value: 20
+      variation-amount: 0.10

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Import</title>
+    <link href="css/neterium.css" rel="stylesheet">
+    <script src="js/forms.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h1>Import & Screen file</h1>
+
+<div class="spaced">
+    <small>Sample ready-to-use CSV files can be found in
+        '<code>${project.basedir}/polling/sample-files</code>' directory</small>
+</div>
+
+<div class="spaced">
+    <form action="./rest/screen/import-file" enctype="multipart/form-data" method="post">
+
+        <div class="spaced">
+            <label for="collection">Collection:</label>
+            &nbsp;
+            <select id="collection" name="collection" style="width: 150px">
+                <option selected="selected">sanctions</option>
+                <option>dowjones</option>
+            </select>
+        </div>
+
+        <div class="spaced">
+            <label for="file">CSV file:</label>
+            &nbsp;
+            <input id="file" name="file" type="file"/>
+        </div>
+        <div class="spaced">
+            <label for="cbx">&nbsp;</label>
+            <input id="cbx" name="chainWithScreening" type="checkbox" value="true"/>
+            Screen after import
+        </div>
+
+        <div class="spaced">
+            <input class="button" type="submit" value="Run"/>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.querySelector('form')
+        .addEventListener('submit', async function (event) {
+            event.preventDefault();
+            await submitFormUsingPost(event.target, './job-results.html');
+        });
+</script>
+
+</body>
+</html>
