@@ -4,10 +4,7 @@ import com.neterium.client.demo.batch.feeding.CounterPartDbWriter;
 import com.neterium.client.demo.batch.feeding.CounterPartFileReader;
 import com.neterium.client.demo.batch.feeding.CounterPartTransformer;
 import com.neterium.client.demo.batch.feeding.ImportStepExecutionListener;
-import com.neterium.client.demo.batch.screening.CounterPartDbReader;
-import com.neterium.client.demo.batch.screening.CounterPartToScreenerWriter;
-import com.neterium.client.demo.batch.screening.ScreeningResultToCounterpartWriter;
-import com.neterium.client.demo.batch.screening.ScreeningResultToMatchWriter;
+import com.neterium.client.demo.batch.screening.*;
 import com.neterium.client.demo.domain.Counterpart;
 import com.neterium.client.sdk.batch.screening.ScreeningPreProcessor;
 import com.neterium.client.sdk.batch.screening.ScreeningTuple;
@@ -117,9 +114,11 @@ public class BatchConfig {
 
     @Bean
     public Step screeningStepMaster(Partitioner screenStepPartitioner,
-                                    Step screeningStepWorker) {
+                                    Step screeningStepWorker,
+                                    ResetAllMatches resetAllMatches) {
         return neteriumBuilder.partitionedStepBuilder("screeningStep.master",
                         gridSize, screenStepPartitioner, screeningStepWorker)
+                .listener(resetAllMatches)
                 .build();
     }
 

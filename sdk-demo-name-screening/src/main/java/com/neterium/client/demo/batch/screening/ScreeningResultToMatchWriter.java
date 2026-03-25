@@ -77,6 +77,7 @@ public class ScreeningResultToMatchWriter implements ItemWriter<ScreeningTuple<C
             tuple.getResult()
                     .getMatches(false)
                     .stream()
+                    .filter(match -> match.getLevel() != CoreResponseMatch.LevelEnum.DISCARDED)
                     .map(match -> buildOrUpdateMatch(counterpartId, match))
                     .forEach(matches::add);
         }
@@ -95,6 +96,7 @@ public class ScreeningResultToMatchWriter implements ItemWriter<ScreeningTuple<C
         entity.setExternalId(matchId);
         entity.setProfileDetails(getProfileInfo(match));
         entity.setLocation(jsonHelper.serialize(match.getLocation()));
+        entity.setActive(true);
         Optional.ofNullable(match.getProfileSummary())
                 .ifPresent(summary -> entity.setCheckSum(summary.getChecksum()));
         Optional.ofNullable(match.getLevel())

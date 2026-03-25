@@ -17,10 +17,19 @@ import java.util.Optional;
 @Repository
 public interface MatchRepository extends MongoRepository<Match, String> {
 
+    // --- For MatchFinder (to re-apply decision) ---
     Optional<Match> findByCounterpartIdAndProfileId(String counterpartId, String profileId);
 
-    List<Match> findByCounterpartId(String counterpartId);
+    // --- For the 'Counterparts' web page ---
 
-    Page<Match> findByDecision(Match.Decision decision, Pageable pageable);
+    List<Match> findByActiveAndCounterpartId(boolean active, String counterpartId);
+
+    // --- For the 'Matches' web page ---
+
+    Page<Match> findByActive(boolean active, Pageable pageable);
+
+    Page<Match> findByActiveAndDecision(boolean active, Match.Decision decision, Pageable pageable);
+
+    List<Match> findByExceptionId(String exceptionId);
 
 }

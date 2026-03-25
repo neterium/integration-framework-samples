@@ -3,7 +3,6 @@ package com.neterium.client.demo.controllers;
 import com.neterium.client.demo.domain.Match;
 import com.neterium.client.demo.repositories.CounterpartRepository;
 import com.neterium.client.demo.repositories.MatchRepository;
-import com.neterium.sdk.api.JetscanApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -30,8 +29,7 @@ public class MatchController {
 
 
     public MatchController(CounterpartRepository counterpartRepository,
-                           MatchRepository matchRepository,
-                           JetscanApi jetscanApi) {
+                           MatchRepository matchRepository) {
         this.counterpartRepository = counterpartRepository;
         this.matchRepository = matchRepository;
     }
@@ -41,12 +39,12 @@ public class MatchController {
     public List<Match> findMatches(@RequestParam(value = "filter", required = false, defaultValue = "") String filter,
                                    @RequestParam(value = "offset", required = false, defaultValue = "0") int offset,
                                    @RequestParam(value = "limit", required = false, defaultValue = "100") int limit) {
-        var pageable = PageRequest.of(offset, limit, Sort.by(Sort.Order.desc("matchCount")));
+        var pageable = PageRequest.of(offset, limit, Sort.by(Sort.Order.asc("screenedText")));
         if (ObjectUtils.isEmpty(filter)) {
-            return matchRepository.findAll(pageable).getContent();
+            return matchRepository.findByActive(true, pageable).getContent();
         } else {
             Match.Decision decision = Match.Decision.valueOf(filter.toUpperCase());
-            return matchRepository.findByDecision(decision, pageable).getContent();
+            return matchRepository.findByActiveAndDecision(true, decision, pageable).getContent();
         }
     }
 
@@ -75,6 +73,5 @@ public class MatchController {
                     counterpartRepository.save(counterpart);
                 });
     }
-
 
 }

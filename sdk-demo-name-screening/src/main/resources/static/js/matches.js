@@ -1,6 +1,6 @@
 async function fetchMatches() {
     try {
-        const e= document.getElementById("filter");
+        const e = document.getElementById("filter");
         const filter = e.options[e.selectedIndex].value;
         const response = await fetch('/rest/matches?filter=' + filter);
         if (!response.ok) {
@@ -17,7 +17,7 @@ async function fetchMatches() {
 
 async function loadCounterpart(id) {
     try {
-        const response = await fetch('/rest/counterparts/'+id);
+        const response = await fetch('/rest/counterparts/' + id);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -47,11 +47,11 @@ function renderMatches(records) {
         row.innerHTML = `                                          
           <td>${rec.screenedText}</td>
           <td>${rec.matchedText}</td>
-          <td>${rec.score??''}</td>
-          <td>${rec.level??''}</td>                      
+          <td>${rec.score ?? ''}</td>
+          <td>${rec.level ?? ''}</td>                      
           <td>${rec.profileId}</td>
           <td>${formatDate(rec.lastModified)}</td>
-          <td>${rec.decision??''}</td>
+          <td>${rec.decision ?? ''}</td>
           <td hidden="hidden">${rec.counterpartId}</td>
           <td hidden="hidden">${rec.profileDetails}</td>
           <td hidden="hidden">${rec.id}</td>                                                                  
@@ -84,7 +84,6 @@ function resetDetails(profileIncluded) {
 }
 
 
-
 async function renderProfile(jsonString) {
     const profileElem = document.getElementById("profileDetails")
     const jsonObj = JSON.parse(jsonString);
@@ -96,14 +95,16 @@ async function renderProfile(jsonString) {
 async function updateDecision(decision) {
     try {
         const id = currentRow.cells[9].textContent.trim();
-        const url = '/rest/matches/'+id + "?decision=" + decision;
-        const response = await fetch(url,{method: 'PUT'});
+        const url = '/rest/matches/' + id + "?decision=" + decision;
+        const response = await fetch(url, {method: 'PUT'});
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         currentRow.cells[6].textContent = decision;
+        if (decision === 'IGNORE') {
+            await whiteListPrompt(id);
+        }
     } catch (error) {
         console.error('Failed to update data:', error);
     }
-
 }

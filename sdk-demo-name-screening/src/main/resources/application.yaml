@@ -90,6 +90,7 @@ neterium:
 
   screening:
     validate: false
+    client-reference: demo
 
 
 # --- Demo app ---

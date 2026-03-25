@@ -43,6 +43,8 @@ public class Match implements Refutable {
     Decision decision = Decision.NONE;
     String profileDetails;
     String location;
+    String exceptionId;
+    boolean active = true;
 
 
     @Override
