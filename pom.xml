@@ -22,7 +22,7 @@
     <properties>
         <revision>1.0.0-SNAPSHOT</revision>
         <java.version>21</java.version> <!-- Override version (17) of spring-boot starter -->
-        <neterium-sdk.version>1.0.0-RC2</neterium-sdk.version>
+        <neterium-sdk.version>1.0.0-RC3</neterium-sdk.version>
     </properties>
 
     <modules>

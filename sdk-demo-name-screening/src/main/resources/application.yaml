@@ -92,6 +92,8 @@ neterium:
     validate: false
     client-reference: demo
 
+  exceptions:
+    use-core-checksum: false
 
 # --- Demo app ---
 
