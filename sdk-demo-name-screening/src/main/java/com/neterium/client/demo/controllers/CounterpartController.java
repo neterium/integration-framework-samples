@@ -49,7 +49,7 @@ public class CounterpartController {
 
     @GetMapping(value = "/{id}/matches", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Match> getCounterpartMatches(@PathVariable("id") String counterpartId) {
-        return matchRepository.findByCounterpartId(counterpartId);
+        return matchRepository.findByActiveAndCounterpartId(true, counterpartId);
     }
 
 }

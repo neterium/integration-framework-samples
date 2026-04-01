@@ -13,7 +13,7 @@ async function fetchCounterparts() {
 
 async function fetchMatches(counterpartId) {
     try {
-        const response = await fetch('/rest/counterparts/'+counterpartId+'/matches');
+        const response = await fetch('/rest/counterparts/' + counterpartId + '/matches');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -54,7 +54,7 @@ function renderCounterparts(records) {
           <td>${rec.id}</td>              
           <td>${rec.lastName}</td>         
           <td>${rec.firstName}</td>
-          <td>${rec.dateOfBirth?? ''}</td>               
+          <td>${rec.dateOfBirth ?? ''}</td>               
           <td>${rec.gender}</td>
           <td>${formatDate(rec.lastImport)}</td>
           <td>${formatDate(rec.lastScreenedAt)}</td>
@@ -63,11 +63,11 @@ function renderCounterparts(records) {
           <td class="number">${formatNumber(rec.alertCount, 0, 0)}</td>         
         `;
         let color;
-        if (rec.matchCount===0) {
+        if (rec.matchCount === 0) {
             color = "black";
-        } else if (rec.alertCount===0) {
+        } else if (rec.alertCount === 0) {
             color = "green";
-        } else if ( rec.alertCount < rec.matchCount) {
+        } else if (rec.alertCount < rec.matchCount) {
             color = "orange";
         } else {
             color = "red"
@@ -86,9 +86,9 @@ function renderMatches(records) {
           <td>${rec.externalId}</td>                                
           <td>${rec.profileId}</td>       
           <td>${rec.matchedText}</td>
-          <td>${rec.score??''}</td>
-          <td>${rec.level??''}</td>               
-          <td>${rec.checkSum??''}</td>        
+          <td>${rec.score ?? ''}</td>
+          <td>${rec.level ?? ''}</td>               
+          <td>${rec.checkSum ?? ''}</td>        
           <td>${formatDate(rec.lastModified)}</td>
           <td><select id="decision_${rec.id}" onchange="updateDecision('${rec.id}')">
                 <option value="NONE">?</option>
@@ -109,11 +109,15 @@ function renderMatches(records) {
 
 async function updateDecision(id) {
     try {
-        const e = document.getElementById("decision_"+id);
-        const url = '/rest/matches/'+id + "?decision=" + e.options[e.selectedIndex].value;
-        const response = await fetch(url,{method: 'PUT'});
+        const e = document.getElementById("decision_" + id);
+        const decision = e.options[e.selectedIndex].value;
+        const url = '/rest/matches/' + id + "?decision=" + decision;
+        const response = await fetch(url, {method: 'PUT'});
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        if (decision === 'IGNORE') {
+            await whiteListPrompt(id);
         }
         await fetchCounterparts();
     } catch (error) {
