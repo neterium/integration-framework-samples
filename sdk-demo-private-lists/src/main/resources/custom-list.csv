@@ -1,0 +1,6 @@
+ID;PROG;NAME;ALIASES;IDS
+1;Risk Country;Belgium;Belgique~Belgie;country=be
+2;Risk Region;Namur;Namuroise;country=be
+3;Risk City;Profondeville;;country=be~region=Namur
+4;CustomId;;;Token=XSABCDEFGHIJ~other=XS1423779187
+5;CustomId;;;keyword=TERRORIST ATTACK

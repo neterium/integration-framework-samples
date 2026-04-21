@@ -22,13 +22,14 @@
     <properties>
         <revision>1.0.0-SNAPSHOT</revision>
         <java.version>21</java.version> <!-- Override version (17) of spring-boot starter -->
-        <neterium-sdk.version>1.0.0-RC3</neterium-sdk.version>
+        <neterium-sdk.version>1.0.0-RC4</neterium-sdk.version>
     </properties>
 
     <modules>
         <module>sdk-demo-shared</module>
         <module>sdk-demo-minimal</module>
         <module>sdk-demo-mapping</module>
+        <module>sdk-demo-private-lists</module>
         <module>sdk-demo-throttling/standalone</module>
         <module>sdk-demo-throttling/web</module>
         <module>sdk-demo-name-screening</module>

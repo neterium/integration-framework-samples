@@ -1,0 +1,29 @@
+logging:
+  level:
+    org.springframework.security: INFO
+    com.neterium.client: DEBUG
+
+# --- SpringBoot ---
+
+spring:
+
+  config:
+    import: "file:.env[.properties]"
+
+
+# --- Neterium ---
+
+neterium:
+
+  oauth2:
+    well-known-uri: https://connect-to.neterium.cloud/auth/realms/dev/.well-known/openid-configuration
+    client-id: api
+
+  api-server:
+    base-url: https://dev.neterium.cloud/api/v1
+    key-id: demo
+
+  api-keys:
+    demo:
+      username: "${SDK_USER}"
+      password: "${SDK_PWD}"
