@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.prowidesoftware</groupId>
             <artifactId>pw-swift-core</artifactId>
-            <version>SRU2025-10.3.7</version>
+            <version>SRU2025-10.3.12</version>
         </dependency>
 
     </dependencies>
