@@ -65,6 +65,7 @@ The build output should then look like:
 [INFO] Neterium Client SDK :: Demo :: Shared Module ....... SUCCESS [  0.833 s]
 [INFO] Neterium Client SDK :: Demo :: Minimal App ......... SUCCESS [  0.651 s]
 [INFO] Neterium Client SDK :: Demo :: Mapping App ......... SUCCESS [  0.356 s]
+[INFO] Neterium Client SDK :: Demo :: Private Lists ....... SUCCESS [  0.293 s]
 [INFO] Neterium Client SDK :: Demo :: Throttling App ...... SUCCESS [  0.410 s]
 [INFO] Neterium Client SDK :: Demo :: Throttling WebApp ... SUCCESS [  0.525 s]
 [INFO] Neterium Client SDK :: Demo :: Name Screening App .. SUCCESS [  0.532 s]
