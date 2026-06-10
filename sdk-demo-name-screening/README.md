@@ -29,8 +29,21 @@ Please refer to the documentation in the [parent](../README.md) module to learn 
 
 ## Configure
 
-- Create an `.env` file based on provided [template](../template.env)
+- Create an `.env` file based on provided [template](../template.env), and place into project **working dir**
+  (`sdk-demo-name-screening`)
+
+```
+- integration-framework-samples
+  |- sdk-demo-name-screening
+     |- .env
+```
+
 - Edit the file to put your credentials
+
+```properties
+SDK_USER=...
+SDK_PWD=...
+```
 
 ## Run
 
@@ -135,7 +148,7 @@ screening executions.
 
 In the event you would like to better understand the internals of the application, in particular
 the _throughput_ optimization, we encourage you to carefully examine the **Job Results** screen
-which is showing you how SpringBatch is first partitioning the initial workload to divide the execution 
+which is showing you how SpringBatch is first partitioning the initial workload to divide the execution
 into smaller work units.
 
 For instance, with the following configuration

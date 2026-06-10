@@ -24,8 +24,22 @@ Please refer to the documentation in the [parent](../../README.md) module to lea
 
 ## Configure
 
-- Create an `.env` file based on provided [template](../../template.env)
+- Create an `.env` file based on provided [template](../template.env), and place into project **working dir**
+  (`web`)
+
+```
+- integration-framework-samples
+  |- sdk-demo-throttling
+     |- web
+        |- .env
+```
+
 - Edit the file to put your credentials
+
+```properties
+SDK_USER=...
+SDK_PWD=...
+```
 
 ## Run
 

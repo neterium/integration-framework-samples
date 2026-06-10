@@ -14,12 +14,27 @@ Please refer to the documentation in the [parent](../README.md) module to learn 
 
 ## Configure
 
-- Create an `.env` file based on provided [template](../template.env)
+- Create an `.env` file based on provided [template](../template.env), and place into project **working dir**
+  (`sdk-demo-minimal`)
+
+```
+- integration-framework-samples
+  |- sdk-demo-minimal
+     |- .env
+```
+
 - Edit the file to put your credentials
+
+```properties
+SDK_USER=...
+SDK_PWD=...
+```
 
 ## Run
 
 ```shell
+cd sdk-demo-minimal
+
 # Name screening
 java -jar target/sdk-demo-minimal*.jar --spring.profiles.active=jetscan
 
