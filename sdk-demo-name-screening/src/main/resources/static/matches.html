@@ -100,7 +100,7 @@
                         title="Confirm match (turn to alert)">Accept</button>
                 <button onclick="updateDecision('IGNORE')" style="background-color: green; color: white"
                         title="Ignore match (false positive)">Reject</button>
-                <button onclick="alert('Sent to level 2 for investigation')"
+                <button onclick="alert('Sent to level 2 for investigation'); updateDecision('FORWARD')"
                         style="background-color: blue; color: white"
                         title="Escalate to some dedicated tool for further investigation">Escalate</button>
                 <button onclick="updateDecision('NONE')" title="Remove decision">Reset</button>
