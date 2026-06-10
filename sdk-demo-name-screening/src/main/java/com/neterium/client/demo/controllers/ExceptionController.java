@@ -1,7 +1,7 @@
 package com.neterium.client.demo.controllers;
 
 import com.neterium.client.demo.repositories.MatchRepository;
-import com.neterium.client.sdk.screening.ExceptionTemplate;
+import com.neterium.client.sdk.exbuilder.ExceptionTemplate;
 import com.neterium.sdk.api.ExceptionsApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
