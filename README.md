@@ -44,14 +44,21 @@ Please contact us to request access to it.
 
 ## Prerequisites
 
-The SDK libraries should be installed in your (local or shared) repository. Refer to the
+Latest version of SDK libraries should be installed in your (local or shared) repository. Refer to the
 SDK [documentation](https://github.com/neterium/neterium-sdk) for guidance on how to build it.
 
 ## Build
 
-Ensure to build the whole project (with all Maven modules) using the root [pom](pom.xml) :
+First clone Git repository:
 
 ```shell
+git clone git@github.com:neterium/integration-framework-samples.git
+```
+
+Then build the whole project (with all Maven modules) using the root [pom](pom.xml) :
+
+```shell
+cd integration-framework-samples
 mvn clean install
 ```
 
